@@ -35,3 +35,5 @@
 
 ### Comandos usados
 ``$ ng serve`` - Para executar a aplicação angular 
+``$ ng g m courses --routing`` (ng generate module <nome_do_modulo> --routing) - Criar o modulo de cursos, podendo organizar de forma logica os componentes no Angular, e criando o modulo de roteamento
+``ng g c courses/courses`` (ng generate component <name>) - criar um componente no modulo cursos 
