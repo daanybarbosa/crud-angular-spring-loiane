@@ -33,6 +33,12 @@
 ### Expansão usadas
 - TS Hero: Organize imports
 
+### Links uteis
+- https://material.angular.io/ 
+- https://angular.io/guide/lazy-loading-ngmodules
+- https://material.io/design/color/the-color-system.html#tools-for-picking-colors
+
+
 ### Comandos usados
 ``$ ng serve`` - Para executar a aplicação angular 
 ``$ ng g m courses --routing`` (ng generate module <nome_do_modulo> --routing) - Criar o modulo de cursos, podendo organizar de forma logica os componentes no Angular, e criando o modulo de roteamento
