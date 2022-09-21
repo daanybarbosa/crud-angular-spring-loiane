@@ -30,5 +30,8 @@
 - Angular Extension Pack
 - Java + Spring Extension Pack
 
+### Expansão usadas
+- TS Hero: Organize imports
+
 ### Comandos usados
 ``$ ng serve`` - Para executar a aplicação angular 
