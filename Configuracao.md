@@ -41,8 +41,9 @@
 
 ### Comandos usados
 - ``$ ng serve`` - Para executar a aplicação angular 
-- ``$ ng g m courses --routing`` (ng generate module <nome_do_modulo> --routing) - Criar o modulo de cursos, podendo organizar de forma logica os componentes no Angular, e criando o modulo de roteamento
-- ``$ ng g c courses/courses`` (ng generate component <nome_do_componente>) - criar um componente no modulo cursos 
+- ``$ ng g m courses --routing`` (ou $ ng generate module <nome_do_modulo> --routing) - Criar o modulo de cursos, podendo organizar de forma logica os componentes no Angular, e criando o modulo de roteamento
+- ``$ ng g c courses/courses`` (ou $ ng generate component <nome_do_componente>) - criar um componente no modulo cursos 
 - ``$ ng g interface courses/model/course`` - criar o arquivo para interface dentro do modulo de courses, ficará na pasta model, mensagem de retorno: CREATE src/app/courses/model/course.ts
 - ``$ ng g m shared/app-material`` - criar modulo para armazenar todos os imports do Angular Material que será compartilhado entre outros modulos da aplicação
+- ``$ ng g s courses/services/courses`` (ou $ ng generate service <nome_do_modulo> <nome_do_diretorio> <nome_do_service>) - criar um service 
 
