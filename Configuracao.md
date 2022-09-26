@@ -46,4 +46,7 @@
 - ``$ ng g interface courses/model/course`` - criar o arquivo para interface dentro do modulo de courses, ficará na pasta model, mensagem de retorno: CREATE src/app/courses/model/course.ts
 - ``$ ng g m shared/app-material`` - criar modulo para armazenar todos os imports do Angular Material que será compartilhado entre outros modulos da aplicação
 - ``$ ng g s courses/services/courses`` (ou $ ng generate service <nome_do_modulo> <nome_do_diretorio> <nome_do_service>) - criar um service 
+- ``$ ng g m shared`` - modulo de erro
+- ``$ ng g c shared/components/error-dialog`` - componente de error - mensagem de erro para o usuario
+
 
