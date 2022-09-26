@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 })
 export class CoursesComponent implements OnInit {
 
-  courses: Observable<Course[]>;
+  courses$: Observable<Course[]>; //colocar o $ na variavel, ajuda a identificar que é um Observable
   //courses: Course[] = []; //lista de array
   displayedColumns = ['name', 'category']; //especificar as colunas que serão exibidas na tabela
 
@@ -19,7 +19,7 @@ export class CoursesComponent implements OnInit {
   constructor(private coursesService: CoursesService) { //injecao diretamente
     //this.courses = []; //inicializando a variavel dentro do construtor
     //this.coursesService = new CoursesService(); //instancia manual
-    this.courses = this.coursesService.list(); //Observable
+    this.courses$ = this.coursesService.list(); //Observable
     //this.coursesService.list().subscribe(courses => this.courses = courses); //utilizando a lista de array
   }
 
