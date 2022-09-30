@@ -5,11 +5,18 @@
 /tmp
 /out-tsc
 /bazel-out
+/crud-angular/dist
+/crud-angular/tmp
+/crud-angular/out-tsc
+/crud-angular/bazel-out
 
 # Node
 /node_modules
 npm-debug.log
 yarn-error.log
+/crud-angular/node_modules
+/crud-angularn/npm-debug.log
+/crud-angular/yarn-error.log
 
 # IDEs and editors
 .idea/
@@ -19,6 +26,13 @@ yarn-error.log
 *.launch
 .settings/
 *.sublime-workspace
+/crud-angular/.idea/
+/crud-angular/.project
+/crud-angular/.classpath
+/crud-angular/.c9/
+/crud-angular/*.launch
+/crud-angular/.settings/
+/crud-angular/*.sublime-workspace
 
 # Visual Studio Code
 .vscode/*
@@ -27,6 +41,12 @@ yarn-error.log
 !.vscode/launch.json
 !.vscode/extensions.json
 .history/*
+/crud-angular/.vscode/*
+/crud-angular/!.vscode/settings.json
+/crud-angular/!.vscode/tasks.json
+/crud-angular/!.vscode/launch.json
+/crud-angular/!.vscode/extensions.json
+/crud-angular/.history/*
 
 # Miscellaneous
 /.angular/cache
@@ -36,7 +56,16 @@ yarn-error.log
 /libpeerconnection.log
 testem.log
 /typings
+/crud-angular//.angular/cache
+/crud-angular/.sass-cache/
+/crud-angular//connect.lock
+/crud-angular//coverage
+/crud-angular//libpeerconnection.log
+/crud-angular/testem.log
+/crud-angular//typings
 
 # System files
 .DS_Store
 Thumbs.db
+/crud-angular/.DS_Store
+/crud-angular/Thumbs.db
