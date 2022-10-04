@@ -56,13 +56,13 @@ yarn-error.log
 /libpeerconnection.log
 testem.log
 /typings
-/crud-angular//.angular/cache
+/crud-angular/.angular/cache
 /crud-angular/.sass-cache/
-/crud-angular//connect.lock
-/crud-angular//coverage
-/crud-angular//libpeerconnection.log
+/crud-angular/connect.lock
+/crud-angular/coverage
+/crud-angular/libpeerconnection.log
 /crud-angular/testem.log
-/crud-angular//typings
+/crud-angular/typings
 
 # System files
 .DS_Store
