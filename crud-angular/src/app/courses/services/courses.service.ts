@@ -11,7 +11,11 @@ import { Course } from '../model/course';
 export class CoursesService {
 
   //url
-  private readonly API = '/assets/courses.json';
+  //private readonly API = '/assets/courses.json';
+
+  //API criada no Spring
+  //private readonly API = 'http://localhost:8080/api/courses';
+  private readonly API = 'api/courses';
 
   //comunicação com a API
   constructor(private httpClient: HttpClient){}

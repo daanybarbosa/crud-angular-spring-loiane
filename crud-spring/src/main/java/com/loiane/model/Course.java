@@ -6,6 +6,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import lombok.Data;
 
 /*
@@ -21,6 +24,8 @@ import lombok.Data;
  * @Column(name = "nome") - alterar o nome da coluna
  * @Column(length = 200) - alterar o tamanho permitido de caracteres - padrão é 255.
  * @Column(nullable = false) - não ira aceitar valores nulos
+ * @JsonProperty - ira transformar o id em _id.
+ * @JsonIgnore - ira ignorar o campo id
  */
 
 @Data
@@ -29,6 +34,8 @@ public class Course {
     
     @Id 
     @GeneratedValue(strategy = GenerationType.AUTO) 
+    @JsonProperty("_id")
+    //@JsonIgnore
     private Long id;
 
     @Column(length = 200, nullable = false) 

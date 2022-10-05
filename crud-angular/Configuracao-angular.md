@@ -49,6 +49,7 @@
 - ``$ ng g m shared`` - modulo de erro
 - ``$ ng g c shared/components/error-dialog`` - componente de error - mensagem de erro para o usuario
 - ``$ ng g pipe shared/pipes/category`` - criação do pipe para inclusão do icone junto com as categorias
+- ``$ npm run start`` - iniciar a aplicacao apos a configuracao do proxy
 
 ### Ambiente Java
 - ``$ java --version`` - versão do Java

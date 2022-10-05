@@ -15,6 +15,7 @@ export class CoursesComponent implements OnInit {
 
   courses$: Observable<Course[]>; //colocar o $ na variavel, ajuda a identificar que é um Observable
   //courses: Course[] = []; //lista de array
+  //displayedColumns = ['_id', 'name', 'category']; //especificar as colunas que serão exibidas na tabela
   displayedColumns = ['name', 'category']; //especificar as colunas que serão exibidas na tabela
 
   //coursesService: CoursesService;
