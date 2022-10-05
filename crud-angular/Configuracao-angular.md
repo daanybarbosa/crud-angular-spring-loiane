@@ -38,7 +38,6 @@
 - https://angular.io/guide/lazy-loading-ngmodules
 - https://material.io/design/color/the-color-system.html#tools-for-picking-colors
 
-
 ### Comandos usados
 - ``$ ng serve`` - Para executar a aplicação angular 
 - ``$ ng g m courses --routing`` (ou $ ng generate module <nome_do_modulo> --routing) - Criar o modulo de cursos, podendo organizar de forma logica os componentes no Angular, e criando o modulo de roteamento
@@ -50,6 +49,25 @@
 - ``$ ng g c shared/components/error-dialog`` - componente de error - mensagem de erro para o usuario
 - ``$ ng g pipe shared/pipes/category`` - criação do pipe para inclusão do icone junto com as categorias
 - ``$ npm run start`` - iniciar a aplicacao apos a configuracao do proxy
+- ``ng update`` - update da versao do Angular
+
+### Update da versão Angular
+**Links:** 
+- https://angular.io/cli/update
+- https://update.angular.io/
+**Comandos:**
+- Select the options matching your project:
+  - Angular versions: 
+    - From: [versao atual] 
+    - To: [versao nova]
+  - App Complexity: [Basic]
+  - Other Dependecies: [I use Angular Material]
+
+#### Comandos
+- ``$ node -v`` - versão do node
+- ``$ ng update`` - atualizar a versao do Angular
+- ``$ ng update @angular/cli@13.3.3 @angular/core@13.3.3 @angular/cdk@13.3.3 @angular/material@13.3.3`` - definir a versao que será atualizada (quando tem uma versão release, o ideal é definir a versão que deseja atualizar)
+- ``$ ng serve`` - rodar a aplicação
 
 ### Ambiente Java
 - ``$ java --version`` - versão do Java

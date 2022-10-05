@@ -46,3 +46,17 @@
 
 #### Comandos
 - Exibir o conteudo do banco de dados: ``SELECT * FROM COURSE;``
+
+### Update da versão do Spring 
+- A atualização das versões é realizada diretamente no arquivo pom.xml. <br>
+``<parent> 
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.7.4</version> [alterar a versão do Spring para a mais atual]
+		<relativePath/> 
+</parent>``
+
+#### Build da aplicação
+- Para compilar a aplicação manualmente: ``Barra do Maven -> crud-spring -> Lifecycle -> compile -> run``
+- Para gerar o arquivo jar ou war: ``Barra do Maven -> crud-spring -> Lifecycle -> package -> run``
+- O arquivo **crud-spring-0.0.1-SNAPSHOT.jar** foi criado dentro da pasta target
