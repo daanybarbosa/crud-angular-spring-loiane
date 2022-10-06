@@ -5,6 +5,7 @@ import { catchError, Observable, of } from 'rxjs';
 
 import { CoursesService } from '../services/courses.service';
 import { Course } from './../model/course';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-courses', //nome do componente/tag do html para exportar esse componente
@@ -14,19 +15,15 @@ import { Course } from './../model/course';
 export class CoursesComponent implements OnInit {
 
   courses$: Observable<Course[]>; //colocar o $ na variavel, ajuda a identificar que é um Observable
-  //courses: Course[] = []; //lista de array
-  //displayedColumns = ['_id', 'name', 'category']; //especificar as colunas que serão exibidas na tabela
-  displayedColumns = ['name', 'category']; //especificar as colunas que serão exibidas na tabela
-
-  //coursesService: CoursesService;
+  displayedColumns = ['name', 'category', 'actions'];
 
   //injecao diretamente
   constructor (
       private coursesService: CoursesService,
-      public dialog: MatDialog
+      public dialog: MatDialog,
+      private router: Router,
+      private route: ActivatedRoute //rota atual
     ) {
-    //this.courses = []; //inicializando a variavel dentro do construtor
-    //this.coursesService = new CoursesService(); //instancia manual
 
     //Observable
     this.courses$ = this.coursesService.list()
@@ -39,7 +36,6 @@ export class CoursesComponent implements OnInit {
         })
       );
 
-    //this.coursesService.list().subscribe(courses => this.courses = courses); //utilizando a lista de array
   }
 
   //mensagem de erro para o usuario
@@ -51,6 +47,11 @@ export class CoursesComponent implements OnInit {
 
   ngOnInit(): void {
 
+  }
+
+  onAdd(){
+    this.router.navigate(['new'], {relativeTo: this.route});
+    console.log('onAdd');
   }
 
 }

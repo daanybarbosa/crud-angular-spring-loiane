@@ -49,7 +49,8 @@
 - ``$ ng g c shared/components/error-dialog`` - componente de error - mensagem de erro para o usuario
 - ``$ ng g pipe shared/pipes/category`` - criação do pipe para inclusão do icone junto com as categorias
 - ``$ npm run start`` - iniciar a aplicacao apos a configuracao do proxy
-- ``ng update`` - update da versao do Angular
+- ``$ ng g c courses/course-form`` - componente de formulário
+
 
 ### Update da versão Angular
 **Links:** 
@@ -69,29 +70,3 @@
 - ``$ ng update @angular/cli@13.3.3 @angular/core@13.3.3 @angular/cdk@13.3.3 @angular/material@13.3.3`` - definir a versao que será atualizada (quando tem uma versão release, o ideal é definir a versão que deseja atualizar)
 - ``$ ng serve`` - rodar a aplicação
 
-### Ambiente Java
-- ``$ java --version`` - versão do Java
-- ``$ javac -version`` - versão do Javac
-
-#### Instalação do Maven
-- Link: https://maven.apache.org/download.cgi
-
-### Criação do projeto com Spring
-- **Comandos:**
-  - Ctrl + Shift + P = abrir os comandos no VsCode
-  - Digitar: Spring Initializr: [Create a Maven Project]
-- **Specify Spring Boot version:** [2.7.4] (ou a versão mais instavel)
-- **Project language:** [Java]
-- **Groud:** [com.loiane]
-- **Artifact:** (nome do projeto) [crud-spring]
-- **Name:** [crud-spring]
-- **Description:** [Projeto CRUD Spring + Angular]
-- **Package name:** [com.loiane]
-- **Packaging:** [Jar]
-- **Java version:** [17]
-- **Dependencies:** 
-  - Spring Web
-  - Lombok
-  - Spring Data JPA
-  - H2 Database
-  - Spring Boot DevTools
