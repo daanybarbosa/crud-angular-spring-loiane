@@ -1,16 +1,9 @@
 <mat-card>
-<!--
-  <mat-card-header>
-    <mat-card-title>Formulário</mat-card-title>
-    <mat-card-subtitle>Cursos</mat-card-subtitle>
-  </mat-card-header>
--->
-
   <mat-toolbar color="primary">Detalhes do curso</mat-toolbar>
 
   <mat-card-content>
     <!-- Associação com o formulario -->
-    <form [formGroup]="form">
+    <form [formGroup]="form" class="min-width">
       <mat-form-field class="full-width">
         <!-- Associação ao campo name do formulario -->
         <input matInput placeholder="Nome" formControlName="name">

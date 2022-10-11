@@ -60,3 +60,7 @@
 - Para compilar a aplicação manualmente: ``Barra do Maven -> crud-spring -> Lifecycle -> compile -> run``
 - Para gerar o arquivo jar ou war: ``Barra do Maven -> crud-spring -> Lifecycle -> package -> run``
 - O arquivo **crud-spring-0.0.1-SNAPSHOT.jar** foi criado dentro da pasta target
+
+
+### Links importantes
+- <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status">Status HTTP</a>
