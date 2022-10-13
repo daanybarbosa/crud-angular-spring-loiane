@@ -37,6 +37,7 @@
 - https://material.angular.io/ 
 - https://angular.io/guide/lazy-loading-ngmodules
 - https://material.io/design/color/the-color-system.html#tools-for-picking-colors
+- https://angular.io/guide/typed-forms
 
 ### Comandos usados
 - ``$ ng serve`` - Para executar a aplicação angular 
@@ -69,4 +70,5 @@
 - ``$ ng update`` - atualizar a versao do Angular
 - ``$ ng update @angular/cli@13.3.3 @angular/core@13.3.3 @angular/cdk@13.3.3 @angular/material@13.3.3`` - definir a versao que será atualizada (quando tem uma versão release, o ideal é definir a versão que deseja atualizar)
 - ``$ ng serve`` - rodar a aplicação
-
+- ``$ ng update @angular/cli @angular/core @angular/cdk @angular/material`` - atualizar para a ultima versão do Angular
+- ``$ npm run start`` - rodar a aplicação

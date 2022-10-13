@@ -31,7 +31,7 @@ export class CoursesService {
       );
   }
 
-  save(record: Course){
+  save(record: Partial<Course>){ //ira aceitar um valor parcial de Course (nesse caso, ele não está recebendo o id, por isso, é um dado parcial)
     //console.log(record);
     return this.httpClient.post<Course>(this.API, record).pipe(first()); //httpClient.post<tipo_da_colecao>(API, dados)
   }

@@ -1,10 +1,15 @@
 import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, NonNullableFormBuilder, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
 import { CoursesService } from '../services/courses.service';
 
+/**
+ * Nova versão do Angular (14.1.0)
+ * UntypedFormGroup - declarar o formulário
+ * UntypedFormBuilder - agrupar os conjuntos de formularios
+ */
 @Component({
   selector: 'app-course-form',
   templateUrl: './course-form.component.html',
@@ -12,20 +17,33 @@ import { CoursesService } from '../services/courses.service';
 })
 export class CourseFormComponent implements OnInit {
 
-  form: FormGroup;
+  form = this.formBuilder.group({ //tipagem do formulario
+    name: [''], //forma enxuta - iniciando a variavel com String
+    category: [''] //forma enxuta - iniciando a variavel com String
+    //name: new FormControl('', {nonNullable: true}), //nonNullable: true - nao ira permitir a atribuição de valor nulo
+    //category: new FormControl('', {nonNullable: true})
+  });
 
-  constructor(private formBuilder: FormBuilder,
+  //constructor(private formBuilder: FormBuilder,
+  constructor(private formBuilder: NonNullableFormBuilder, //aplicar o nonNullable: true, em todos os campos do formulario
     // injetar um novo servico
     private service: CoursesService,
     private snackBar: MatSnackBar,
     private location: Location) {
-    this.form = this.formBuilder.group({
-      name: [null],
-      category: [null]
-    });
+    //this.form = this.formBuilder.group({ //constutor
+      //name: [null], //forma enxuta - sem declarar o tipo do campo
+      //category: [null] //forma enxuta - sem declarar o tipo do campo
+      //name: new FormControl<string | null>(''), //declarando com o tipo String ou nulo
+      //name: new FormControl<string>(''), //declarando com o tipo String
+      //category: new FormControl<string>('')
+    //});
   }
 
   ngOnInit(): void {
+    //this.form.value; //acessar os valores do formulario
+    //this.form.get('name');
+    //this.form.value.name = 'Daniele'; //acessar os valores do formulario e/ou atribuir valores
+    //this.form.value.name = null; //erro - nao permite a atribuição de um valor nulo
   }
 
   onSubmit(){
