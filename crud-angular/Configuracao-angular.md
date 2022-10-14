@@ -51,6 +51,7 @@
 - ``$ ng g pipe shared/pipes/category`` - criação do pipe para inclusão do icone junto com as categorias
 - ``$ npm run start`` - iniciar a aplicacao apos a configuracao do proxy
 - ``$ ng g c courses/course-form`` - componente de formulário
+- ``$ ng g c courses/courses-list`` - componente para renderizar o material table
 
 
 ### Update da versão Angular
@@ -65,7 +66,7 @@
   - App Complexity: [Basic]
   - Other Dependecies: [I use Angular Material]
 
-#### Comandos
+#### Comandos para update da versão Angular
 - ``$ node -v`` - versão do node
 - ``$ ng update`` - atualizar a versao do Angular
 - ``$ ng update @angular/cli@13.3.3 @angular/core@13.3.3 @angular/cdk@13.3.3 @angular/material@13.3.3`` - definir a versao que será atualizada (quando tem uma versão release, o ideal é definir a versão que deseja atualizar)
