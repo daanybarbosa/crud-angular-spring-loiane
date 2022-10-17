@@ -4,12 +4,16 @@
 
   <div class="column-flex mat-elevation-z8">
 
-    <!-- inclusão do componente courses-list -->
-    <!-- Verificar se já tem os dados da tabela carregados e irá carregar o array de courses -->
+    <!--
+      - Inclusão do componente courses-list
+      - Verificar se já tem os dados da tabela carregados e irá carregar o array de courses
+      - Escutar o evento onAdd() - botão de adicionar
+    -->
     <app-courses-list
       *ngIf="courses$ | async as courses; else loading"
-      [courses]="courses">
-    </app-courses-list>
+      [courses]="courses"
+      (add)="onAdd()"
+    ></app-courses-list>
 
     <ng-template #loading>
       <div class="loading-spinner">
