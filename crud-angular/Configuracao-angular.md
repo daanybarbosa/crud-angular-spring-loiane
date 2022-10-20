@@ -52,6 +52,7 @@
 - ``$ npm run start`` - iniciar a aplicacao apos a configuracao do proxy
 - ``$ ng g c courses/course-form`` - componente de formulário
 - ``$ ng g c courses/courses-list`` - componente para renderizar o material table
+- ``$ ng g resolver courses/guards/course`` - criar um resolver (guarda de rotas), ao clicar no curso para editar, irá obter o id deste curso e precisará carregar todas as informações antes de exibir na tela e fazer o redirecionamento, dependendo do tamanho os dados não é uma boa opção. 
 
 
 ### Update da versão Angular

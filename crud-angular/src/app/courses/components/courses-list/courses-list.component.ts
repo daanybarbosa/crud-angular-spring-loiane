@@ -15,6 +15,7 @@ export class CoursesListComponent implements OnInit {
 
   //@Output - todos os eventos que estão saindo desse componente
   @Output() add = new EventEmitter(false); //emissor de eventos
+  @Output() edit = new EventEmitter(false);
 
   readonly displayedColumns = ['name', 'category', 'actions'];
 
@@ -25,5 +26,9 @@ export class CoursesListComponent implements OnInit {
 
   onAdd(){
     this.add.emit(true); //irá emitir um valor para o botao de adicionar
+  }
+
+  onEdit(course: Course){
+    this.edit.emit(course); //ira identificar o id do curso e ira decidir o que fazer com o curso
   }
 }

@@ -43,14 +43,17 @@ export class CoursesComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {
-
-  }
+  ngOnInit(): void {}
 
   onAdd(){
     //roteamento
     this.router.navigate(['new'], {relativeTo: this.route});
     console.log('onAdd');
+  }
+
+  onEdit(course: Course){
+    this.router.navigate(['edit', course._id], {relativeTo: this.route});
+    console.log('onEdit');
   }
 
 }

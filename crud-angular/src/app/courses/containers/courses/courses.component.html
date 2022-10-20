@@ -8,11 +8,13 @@
       - Inclusão do componente courses-list
       - Verificar se já tem os dados da tabela carregados e irá carregar o array de courses
       - Escutar o evento onAdd() - botão de adicionar
+      - $event - Objeto de eventos do Typescript para capturar o id do curso
     -->
     <app-courses-list
       *ngIf="courses$ | async as courses; else loading"
       [courses]="courses"
       (add)="onAdd()"
+      (edit)="onEdit($event)"
     ></app-courses-list>
 
     <ng-template #loading>
