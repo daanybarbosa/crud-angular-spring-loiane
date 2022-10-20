@@ -26,7 +26,7 @@ export class CourseResolver implements Resolve<Course> {
     if (route.params && route.params['id']){
       return this.service.loadById(route.params['id']);
     }
-    //caso nao encontre o id, será inicializa-lo como vazio
+    //caso nao encontre o id ou encontre o resolver, será inicializa-lo como vazio
     return of({_id: '', name: '', category: ''});
   }
 }

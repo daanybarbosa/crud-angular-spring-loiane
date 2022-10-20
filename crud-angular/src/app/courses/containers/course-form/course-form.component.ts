@@ -1,3 +1,5 @@
+import { Course } from './../../model/course';
+import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { NonNullableFormBuilder } from '@angular/forms';
@@ -13,6 +15,7 @@ import { CoursesService } from '../../services/courses.service';
 export class CourseFormComponent implements OnInit {
 
   form = this.formBuilder.group({ //tipagem do formulario
+    _id: [''], //campo escondido, apenas o componente terá acesso
     name: [''], //forma enxuta - iniciando a variavel com String
     category: [''] //forma enxuta - iniciando a variavel com String
   });
@@ -20,10 +23,20 @@ export class CourseFormComponent implements OnInit {
   constructor(private formBuilder: NonNullableFormBuilder, //aplicar o nonNullable: true, em todos os campos do formulario
     private service: CoursesService,
     private snackBar: MatSnackBar,
-    private location: Location) {
+    private location: Location,
+    private route: ActivatedRoute) {
   }
 
   ngOnInit(): void {
+    //pegar uma imagem da rota em um determinado limite de tempo
+    const course: Course = this.route.snapshot.data['course'];
+    //console.log(course);
+    this.form.setValue({
+      //essas variaveis estao presentes no formulario
+      _id: course._id,
+      name: course.name,
+      category: course.category
+    })
   }
 
   onSubmit(){
